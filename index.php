@@ -11,7 +11,8 @@ include "config.php";
     <link href="css/main.css" rel="stylesheet" />
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
+<!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
     <script type="text/javascript">
         $(document).ready(function(){
 
@@ -44,6 +45,8 @@ include "config.php";
 </head>
 <body>
 
+
+<div class="outer-body">
 <h1>PROJECT & SEMINAL MG SYSTEM</h1>
     <div class="s003">
       <form>
@@ -67,7 +70,7 @@ include "config.php";
                     </select>
                 </div>
             </div>
-            <div class="input-field first-wrap">
+            <div class="input-field first-wrap department-style">
                 <div class="input-select">
                     <select class="select-style" id="sel_department" name="choices-single-defaul">
                         <option placeholder="">Select Department</option>
@@ -87,8 +90,15 @@ include "config.php";
         </div>
       </form>
     </div>
+    <div id="alertDiv"></div>
+    <div class="table-container" id="table-container">
+        
+      </div>
 
-    <script src="js/extention/choices.js"></script>
+
+                    </div>
+    
+      <script src="js/extention/choices.js"></script>
     <script>
       const choices = new Choices('[data-trigger]',
       {
@@ -97,6 +107,11 @@ include "config.php";
       });
 
     </script>
+    <script src="js/dataSource.js"></script>
+    <script src="js/table.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/alertBox.js"></script>
+    <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
 </body>
 </html>

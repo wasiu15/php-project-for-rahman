@@ -451,13 +451,57 @@ legend {
 /*===============================
 =            Choices            =
 ===============================*/
-
+body {
+  overflow: hidden !important;
+  display: block;
+  box-sizing: border-box;
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+.outer-body {
+  padding: 10px;
+  overflow: hidden !important;
+  display: block;
+  box-sizing: border-box;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  text-align: center;
+}
+.body-container {
+  display: block;
+  background-color: blue;
+}
+#alertDiv {
+  display: inline;
+  margin-top: 10px;
+  width: fit-content;
+}
 .select-style,
 .select-style option {
   margin: 25px 10px;
   width: 80%;
   border: none;
   color: #888 !important;
+}
+.table-container {
+  margin-top: 12px;
+}
+.table-container th,
+.projectList-info {
+  text-align: center;
+}
+.projectList-info {
+  color: #919191;
+  margin-bottom: 5px;
+}
+.table-container td {
+  font-size: 10px;
+  width: fit-content;
+}
+.department-style {
+  min-width: 250px !important;
 }
 
 .choices {
@@ -831,7 +875,6 @@ h1 {
   text-align: center;
 }
 .s003 {
-  min-height: 100vh;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: center;
